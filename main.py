@@ -37,7 +37,3 @@ print("Helloworld!")
 # output = pd.DataFrame({'PassengerId': test.PassengerId, 'Survived': predictions})
 # output.to_csv('submission.csv', index=False)
 # print("Your submission was successfully saved!")
-
-
-#fuck!
-#fuck!
