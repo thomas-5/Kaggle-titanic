@@ -22,19 +22,20 @@ rate_men = sum(men)/len(men)
 
 print("% of men who survived:", rate_men)
 
+print("Helloworld!")
 
-y = train["Survived"]
+# y = train["Survived"]
 
-features = ["Pclass", "Sex", "SibSp", "Parch"]
-X = pd.get_dummies(train[features])
-X_test = pd.get_dummies(test[features])
+# features = ["Pclass", "Sex", "SibSp", "Parch"]
+# X = pd.get_dummies(train[features])
+# X_test = pd.get_dummies(test[features])
 
-model = RandomForestClassifier(n_estimators=100, max_depth=5, random_state=1)
-model.fit(X, y)
-predictions = model.predict(X_test)
+# model = RandomForestClassifier(n_estimators=100, max_depth=5, random_state=1)
+# model.fit(X, y)
+# predictions = model.predict(X_test)
 
-output = pd.DataFrame({'PassengerId': test.PassengerId, 'Survived': predictions})
-output.to_csv('submission.csv', index=False)
-print("Your submission was successfully saved!")
+# output = pd.DataFrame({'PassengerId': test.PassengerId, 'Survived': predictions})
+# output.to_csv('submission.csv', index=False)
+# print("Your submission was successfully saved!")
 
 # new comment
